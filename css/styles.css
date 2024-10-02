@@ -1,0 +1,244 @@
+/* font-family: "Roboto", sans-serif;
+  font-weight: 500; */
+
+/* font-family: "Mulish", sans-serif;
+  font-weight: <weight>; */
+
+body {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+}
+
+/* Components */
+
+[class*='__container'] {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: 700;
+  color: #458ff6;
+  border: 1px solid #458ff6;
+  background-color: transparent;
+  padding: 20px 40px;
+  border-radius: 55px;
+}
+
+.button__fill {
+  color: var(--button-second-text-color);
+  background-color: var(--button-main-text-color);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Header */
+.header {
+  background-color: var(--main-bg-color);
+  height: 100vh;
+}
+
+.header__container {
+  /* padding-top: 96px; */
+  padding-bottom: 196px;
+}
+.header__row {
+  padding-top: 96px;
+  padding-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 354px;
+
+  position: sticky;
+  top: -50px;
+  background-color: var(--main-bg-color);
+}
+
+.header__logo {
+  color: var(--header-logo-color);
+}
+
+.header__menu {
+}
+
+.header__list {
+  display: flex;
+  gap: 73px;
+
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1f1534;
+}
+
+.header__item {
+}
+
+.header__item--accent {
+  font-weight: 700;
+  color: #2e4e92;
+}
+.hero {
+  margin-top: 115px;
+
+  display: flex;
+}
+.hero__content {
+  padding-top: 39px;
+}
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #3c567b;
+  line-height: 56px;
+}
+.hero__text {
+  margin-top: 50px;
+  max-width: 525px;
+
+  font-family: var(--additional-font-family);
+  font-size: 19px;
+  font-weight: 500;
+  color: #93c1f9;
+  line-height: 27px;
+}
+.hero__button {
+  margin-top: 90px;
+}
+.hero__img {
+  /* max-width: 100%; */
+}
+
+/* Main */
+.services__wrapper {
+  background-color: var(--additional-bg-color);
+}
+
+.services__container {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 87px;
+}
+.main__title {
+  color: var(--sections-title-text-color);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 56px;
+}
+.main__label {
+  margin-top: 36px;
+  max-width: 766px;
+  display: inline-block;
+
+  color: #a7a7a7;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+.main__cards {
+  margin-top: 111px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 36px;
+}
+.card {
+  background-color: #ffffff;
+  padding: 47px 0;
+  border-radius: 20px;
+}
+.card__img {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__title {
+  color: var(--services-title-text-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0;
+}
+.card__text {
+  color: var(--services-text-color);
+  max-width: 260px;
+  display: inline-block;
+  text-align: left;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+.cards__button {
+  margin-top: 69px;
+}
+/* Providers main */
+.providers__wrapper {
+  background-color: var(--main-bg-color);
+}
+.providers__container {
+  padding-top: 103px;
+  padding-bottom: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 214px;
+}
+
+.providers__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.providers__row--revers {
+  flex-direction: row-reverse;
+}
+
+.providers__img {
+}
+.providers__content {
+  margin-top: 52px;
+  max-width: 475px;
+}
+.providers__title {
+  color: var(--sections-title-text-color);
+  font-size: 36px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0;
+}
+
+.providers__title--wide {
+  max-width: 480px;
+}
+
+.providers__text {
+  max-width: 410px;
+  margin-top: 59px;
+
+  color: var(--sections-additional-text-color);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.providers__text--short {
+  max-width: 380px;
+}
+
+.providers__button {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

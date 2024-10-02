@@ -1,0 +1,23 @@
+:root {
+  --main-font-family: 'Mulish', sans-serif;
+  --additional-font-family: 'Roboto', sans-serif;
+
+  --main-bg-color: #ffffff;
+  --additional-bg-color: #f3fbff;
+  --gradient-bg-color: linear-gradient(#6888c8, #5a98f2);
+
+  --header-logo-color: #462e6a;
+  --footer-logo-color: #ffffff;
+
+  --services-title-text-color: #000000;
+  --services-text-color: #7d7987;
+
+  --sections-title-text-color: #462e6a;
+  --sections-additional-text-color: #7d7987;
+
+  --form-common-text-color: #ffffff;
+  --footer-common-text-color: #ffffff;
+
+  --button-main-text-color: #458ff6;
+  --button-second-text-color: #ffffff;
+}
