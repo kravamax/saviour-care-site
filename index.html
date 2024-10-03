@@ -10,18 +10,26 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__container">
         <div class="header__row">
-          <a href="#" class="logo header__logo">Saviour Care</a>
+          <a href="#header" class="logo header__logo">Saviour Care</a>
           <nav class="header__menu">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__item--accent" href="#">Home</a>
+                <a class="header__item--accent header__item-link" href="#header"
+                  >Home</a
+                >
               </li>
-              <li class="header__item"><a href="#">Find a doctor</a></li>
-              <li class="header__item"><a href="#">Apps</a></li>
-              <li class="header__item"><a href="#">Testimonials</a></li>
+              <li class="header__item">
+                <a class="header__item-link" href="#find">Find a doctor</a>
+              </li>
+              <li class="header__item">
+                <a class="header__item-link" href="#webapp">Apps</a>
+              </li>
+              <li class="header__item">
+                <a class="header__item-link" href="#">Testimonials</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -47,7 +55,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="services__wrapper">
+      <div class="services__wrapper" id="services">
         <div class="services__container">
           <h3 class="main__title">Services we Offer</h3>
           <p class="main__label">
@@ -949,7 +957,7 @@
               height="491"
             />
             <div class="providers__content">
-              <div class="providers__title">Leading healthcare providers</div>
+              <h3 class="providers__title">Leading healthcare providers</h3>
               <div class="providers__text">
                 Trafalgar provides progressive, and affordable healthcare,
                 accessible on mobile and online for everyone. To us, it’s not
@@ -966,10 +974,10 @@
               width="657"
               height="463"
             />
-            <div class="providers__content">
-              <div class="providers__title providers__title--wide">
+            <div class="providers__content" id="webapp">
+              <h3 class="providers__title providers__title--wide">
                 Download our Saviour Care mobile app
-              </div>
+              </h3>
               <div class="providers__text providers__text--short">
                 Our dedicated patient engagement app and web portal allow you to
                 access information instantaneously (no tedeous form, long calls,
@@ -981,7 +989,6 @@
                   width="10"
                   height="16"
                   viewBox="0 0 10 16"
-                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -994,7 +1001,88 @@
           </div>
         </div>
       </div>
+      <div class="find__wrapper" id="find">
+        <div class="find__container">
+          <div class="providers__row">
+            <img
+              class="providers__img"
+              src="./images/find-doctor/doctor.png"
+              alt="woman speak on tablet"
+              width="576"
+              height="501"
+            />
+            <div class="providers__content">
+              <h3 class="providers__title find__tittle--short">
+                Find a Doctor near you
+              </h3>
+              <div class="providers__text providers__title--short">
+                Our app and web portal allows you to find the doctor to your
+                nearest location.
+              </div>
+              <button class="button providers__button">Find now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="signup__wrapper">
+        <div class="signup__container">
+          <div class="form__block">
+            <form class="signup__form">
+              <h3 class="form__title">Sign up with us online</h3>
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                placeholder="name"
+              />
+              <input
+                class="form__input"
+                type="text"
+                name="lastname"
+                placeholder="lastname"
+              />
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="email"
+              />
+              <button class="button form__button">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__column">
+          <a href="#header" class="logo footer__logo">Saviour Care</a>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+          <p class="footer__copyright">©AK PVT LTD 2021. All reserved.</p>
+        </div>
+        <div class="footer__column">
+          <p class="footer__label">Company</p>
+          <nav class="footer_menu">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#services" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Testimonials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#find" class="footer__link">Find a doctor</a>
+              </li>
+              <li class="footer__item">
+                <a href="#webapp" class="footer__link">Apps</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
