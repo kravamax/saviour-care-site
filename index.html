@@ -40,7 +40,10 @@
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa.
             </p>
-            <button class="button hero__button button__fill">
+            <button
+              class="button hero__button button__fill"
+              id="myModal-open-button"
+            >
               Consult today
             </button>
           </div>
@@ -51,6 +54,36 @@
             width="577"
             height="392"
           />
+        </div>
+      </div>
+
+      <div class="modal-overlay" id="myModal">
+        <div class="box-modal">
+          <button class="modal-close" id="myModal-close-button">x</button>
+          <div class="form__block">
+            <form class="signup__form">
+              <h3 class="form__title">Sign up with us online</h3>
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                placeholder="name"
+              />
+              <input
+                class="form__input"
+                type="text"
+                name="lastname"
+                placeholder="lastname"
+              />
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="email"
+              />
+              <button class="button form__button">Send</button>
+            </form>
+          </div>
         </div>
       </div>
     </header>
@@ -1084,5 +1117,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
