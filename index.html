@@ -33,6 +33,33 @@
             </ul>
           </nav>
         </div>
+        <div class="header__mobile-row">
+          <a href="#header" class="logo header__logo">Saviour Care</a>
+          <button class="button__burger" id="burger">
+            <span class="button__burger-line"></span
+            ><span class="button__burger-line"></span
+            ><span class="button__burger-line"></span>
+          </button>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__item--accent header__item-link" href="#header"
+                  >Home</a
+                >
+              </li>
+              <li class="header__item">
+                <a class="header__item-link" href="#find">Find a doctor</a>
+              </li>
+              <li class="header__item">
+                <a class="header__item-link" href="#webapp">Apps</a>
+              </li>
+              <li class="header__item">
+                <a class="header__item-link" href="#">Testimonials</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
         <div class="hero">
           <div class="hero__content">
             <h1 class="hero__title">Virtual healthcare Saviour for you</h1>
@@ -51,15 +78,13 @@
             class="hero__img"
             src="./images/hero-img.png"
             alt="doctor greetings from laptop"
-            width="577"
-            height="392"
           />
         </div>
       </div>
 
       <div class="modal-overlay" id="myModal">
         <div class="box-modal">
-          <button class="modal-close" id="myModal-close-button">x</button>
+          <button class="modal-close" id="myModal-close-button">&times;</button>
           <div class="form__block">
             <form class="signup__form">
               <h3 class="form__title">Sign up with us online</h3>
@@ -87,7 +112,7 @@
         </div>
       </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
       <div class="services__wrapper" id="services">
         <div class="services__container">
           <h3 class="main__title">Services we Offer</h3>
@@ -1116,7 +1141,8 @@
           </nav>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

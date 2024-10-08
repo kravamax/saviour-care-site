@@ -1,20 +1,33 @@
-console.log('Modal script');
-
 const modal = document.getElementById('myModal');
 const btnOpen = document.getElementById('myModal-open-button');
 const btnClose = document.getElementById('myModal-close-button');
 
-btnOpen.addEventListener('click', (e) => {
-    modal.classList.add("open");
-})
+function openModal() {
+  modal.classList.add('open');
+  window.addEventListener('keydown', (e) => {
+    console.log(e);
 
-btnClose.addEventListener('click', (e) => {
-    modal.classList.remove('open')
-})
-
-modal.addEventListener('click', e => {
-    if(e.target === modal) {
-        // removeEventListener(e, this);
-        modal.classList.remove('open')
+    if (e.key === 'Escape') {
+      modal.classList.remove('open');
+      window.removeEventListener('keydown', openModal);
+      return;
     }
-})
+  });
+}
+
+function closeModal(e) {
+  if (e.target === modal || e.target === btnClose) {
+    modal.classList.remove('open');
+    // window.removeEventListener('click', closeModal)
+    console.log('overlay click');
+    return;
+  }
+
+  console.log('modal click');
+}
+
+btnOpen.addEventListener('click', openModal);
+
+// btnClose.addEventListener('click', closeModal);
+
+modal.addEventListener('click', closeModal);
