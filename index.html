@@ -40,21 +40,31 @@
             ><span class="button__burger-line"></span
             ><span class="button__burger-line"></span>
           </button>
-          <nav class="header__menu">
+          <nav class="header__menu-mobile">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__item--accent header__item-link" href="#header"
+                <a
+                  data-link="menu-link"
+                  class="header__item-link header__item-mobile--accent"
+                  href="#header"
                   >Home</a
                 >
               </li>
               <li class="header__item">
-                <a class="header__item-link" href="#find">Find a doctor</a>
+                <a data-link="menu-link" href="#find">Find a doctor</a>
               </li>
               <li class="header__item">
-                <a class="header__item-link" href="#webapp">Apps</a>
+                <a
+                  data-link="menu-link"
+                  class="header__item-link"
+                  href="#webapp"
+                  >Apps</a
+                >
               </li>
               <li class="header__item">
-                <a class="header__item-link" href="#">Testimonials</a>
+                <a data-link="menu-link" class="header__item-link" href="#"
+                  >Testimonials</a
+                >
               </li>
             </ul>
           </nav>
@@ -112,7 +122,7 @@
         </div>
       </div>
     </header>
-    <!-- <main class="main">
+    <main class="main">
       <div class="services__wrapper" id="services">
         <div class="services__container">
           <h3 class="main__title">Services we Offer</h3>
@@ -1011,8 +1021,6 @@
               class="providers__img"
               src="./images/providers/healthcare.png"
               alt="tablet woman sit on armchair"
-              width="617"
-              height="491"
             />
             <div class="providers__content">
               <h3 class="providers__title">Leading healthcare providers</h3>
@@ -1029,8 +1037,6 @@
               class="providers__img"
               src="./images/providers/mobileapp.png"
               alt="tablet woman sit on armchair"
-              width="657"
-              height="463"
             />
             <div class="providers__content" id="webapp">
               <h3 class="providers__title providers__title--wide">
@@ -1066,8 +1072,6 @@
               class="providers__img"
               src="./images/find-doctor/doctor.png"
               alt="woman speak on tablet"
-              width="576"
-              height="501"
             />
             <div class="providers__content">
               <h3 class="providers__title find__tittle--short">
@@ -1141,7 +1145,7 @@
           </nav>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
